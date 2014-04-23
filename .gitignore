@@ -11,4 +11,5 @@
 /.settings
 /logs
 /target
+/web/js/compiled/*
 pom.xml
