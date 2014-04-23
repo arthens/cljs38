@@ -1,0 +1,14 @@
+**/target
+*.bak
+*.class
+*asc
+*jar
+*~
+.lein*
+/.classpath
+/.nrepl-port
+/.project
+/.settings
+/logs
+/target
+pom.xml
