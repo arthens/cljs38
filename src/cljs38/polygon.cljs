@@ -10,8 +10,8 @@
 (defn coordinates [number-of-edges radius]
   (letfn [
     (edge-coordinates [index]
-      [(* radius (Math/cos (/(* index 2 Math/PI) number-of-edges)))
-       (* radius (Math/sin (/(* index 2 Math/PI) number-of-edges)))])
+      [(* radius (Math/cos (/ (* index 2 Math/PI) number-of-edges)))
+       (* radius (Math/sin (/ (* index 2 Math/PI) number-of-edges)))])
 
     (next-edge [edges-left, edges]
       (if (> edges-left 0)
