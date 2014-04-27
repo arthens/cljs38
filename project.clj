@@ -13,15 +13,15 @@
 
   :cljsbuild {:builds [{:id "production"
                         :source-paths ["src"]
-                        :compiler {:output-to "web/js/compiled/clj38.js"
+                        :compiler {:output-to "web/js/compiled/cljs38.js"
                                    :optimizations :whitespace
                                    :pretty-print true}}
 
                        {:id "testable"
                         :source-paths ["src" "test"]
-                        :compiler {:output-to "web/js/compiled/clj38_test.js"
+                        :compiler {:output-to "web/js/compiled/cljs38_test.js"
                                    :optimizations :whitespace
                                    :pretty-print true}}]
 
               :test-commands {"unit-tests" ["phantomjs" :runner
-                                            "web/js/compiled/clj38_test.js"]}})
+                                            "web/js/compiled/cljs38_test.js"]}})
