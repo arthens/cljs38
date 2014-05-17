@@ -64,7 +64,7 @@
                   (list 14 13 8)
                   (list 14 12 9))))))
 
-(deftest no-twon-game
+(deftest not-won-game
   (is (= false (validation/won-game? 
                 38
                 test-board
