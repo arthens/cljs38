@@ -7,8 +7,7 @@
 ;;7 15 19 18 1
 ;; 6 16 17 2
 ;;   5 4 3
-(def initial-values (list 9 10 11 8 14 13 12 7 15 19 18 1 6 16 17 2 5 4 3))
-
+;;
 ;; Board indexes:
 ;;
 ;;    00 01 02
@@ -16,10 +15,11 @@
 ;; 07 08 09 10 11
 ;;  12 13 14 15
 ;;    16 17 18
-(def game-board initial-values)
+(defn game-board []
+	(list 9 10 11 8 14 13 12 7 15 19 18 1 6 16 17 2 5 4 3))
 
 ;; Rows indexes
-(def rows 
+(defn rows []
 	(list
 		;; horizontal rows
 		(list 0 1 2)

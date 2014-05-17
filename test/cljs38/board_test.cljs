@@ -8,6 +8,6 @@
 
 (deftest initial-game-not-won
   (is (= false (validation/won-game? 
-                board/magic-number
-                board/game-board
-                board/rows))))
+                38
+                (board/game-board)
+                (board/rows)))))

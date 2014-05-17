@@ -14,14 +14,14 @@
   :cljsbuild {:builds [{:id "production"
                         :source-paths ["src"]
                         :compiler {:output-to "web/js/compiled/cljs38.js"
-                                   :optimizations :whitespace
+                                   :optimizations :advanced
                                    :pretty-print true}}
 
                        {:id "testable"
                         :source-paths ["src" "test"]
                         :compiler {:output-to "web/js/compiled/cljs38_test.js"
-                                   :optimizations :whitespace
+                                   :optimizations :simple
                                    :pretty-print true}}]
 
-              :test-commands {"unit-tests" ["phantomjs" :runner
+              :test-commands {"unit-tests" ["node" :node-runner
                                             "web/js/compiled/cljs38_test.js"]}})
