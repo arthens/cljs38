@@ -1,4 +1,4 @@
-(ns cljs38.game)
+(ns cljs38.board)
 
 ;; Initial values
 ;;
